@@ -1,13 +1,19 @@
-var request = require('request-promise');
-
-
-document.getElementById('install').addEventListener('click',()=>{
-    var options = {
+document.getElementById('install').addEventListener('click',async  ()=>{
+    console.log("click here ")
+        document.getElementById('spin-loading').style.display = 'block'
+        const response = await fetch('http://127.0.0.1:5000/runscript', {
             method: 'POST',
-            uri:"http://127.0.0.1:5000/runscript",
-            form:{value: 'runn'}
-        }
-        request(options)
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                value: 'runn'
+            })
+        })
+    if(response){
+        document.getElementById('spin-loading').style.display = 'none'
+    }
+
 
 })
 

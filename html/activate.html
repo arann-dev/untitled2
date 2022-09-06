@@ -3,12 +3,36 @@
 <head>
       <meta charset="UTF-8">
 </head>
+<style>
+      #spin-loading {
+            display: none;
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+      }
+</style>
 <body>
+<form>
+      <label for="fname">Password:</label><br>
+      <input type="text" id="fname" name="fname" value="Enter passsword admin"><br>
+
+</form>
+<div id="spin-loading">
+
+</div>
 <div>
       <button  id ="install" class="btn" style="width:100%"> INSTALL </button>
 </div>
 
-<script type="text/javascript" src = "../bundle.js" ></script>
+<script type="text/javascript" src = "../index.js" ></script>
 
 </body>
 </html>
