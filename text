@@ -1,0 +1,2 @@
+choco uninstall vagrant - y
+choco uninstall virtualbox -y

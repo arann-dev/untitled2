@@ -1,0 +1,21 @@
+{
+  "name": "untitled2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "bundle": "browserify index.js > bundle.js",
+    "test": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "electron": "^20.1.1",
+    "python-shell": "^3.0.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "require": "^2.4.20"
+  }
+}
