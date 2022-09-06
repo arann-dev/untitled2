@@ -11,7 +11,7 @@ app = Flask(__name__)
 def rs():
     # subprocess.call(r'Nonadmin.cmd', shell=True)
     # subprocess.run('testbatfile.bat', shell=True)
-    val = request.form.get('value')
+     val = request.json.get('value')
     print(val)
     if val != 'runn':
         return {'message': "errrr"}
